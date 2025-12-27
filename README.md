@@ -35,10 +35,10 @@ Ce n'est pas encore une théorie validée scientifiquement, mais une proposition
 
 Le projet est organisé en 5 niveaux progressifs :
 
-### [Niveau I - Le substrat combinatoire](docs/niveau-I-substrat/)
+### [Niveau I - Le substrat combinatoire](docs/Niveau-I-A-Axiomes-fondamentaux/)
 Axiomes fondamentaux (A0-A3), dynamique du vide sans temps externe, nucléation
 
-### [Niveau II - L'espace des histoires et la causalité](docs/niveau-II-histoires/)
+### [Niveau II - L'espace des histoires et la causalité](docs/Niveau-I-B-Dynamique-et-frequences/)
 Structures probabilistes, observables, phases stables, univers émergents, temps interne
 
 ### [Niveau III - Dérivation de la mécanique quantique](docs/niveau-III-quantique/)
