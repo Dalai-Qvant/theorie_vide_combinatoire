@@ -53,7 +53,7 @@ Au niveau I.A, nous avons défini :
 
 ### Idée directrice
 
-Le "temps" Au niveau I est un artefact interne : on ne dispose que de l’énumération des événements, de la structure causale et de compteurs qui mesurent *combien* et *comment* chaque élément est impliqué dans l’évolution.
+Le "temps" au niveau I est un artefact interne : on ne dispose que de l’énumération des événements, de la structure causale et de compteurs qui mesurent *combien* et *comment* chaque élément est impliqué dans l’évolution.
 
 Ce document introduit :
 - des compteurs Read/Write,

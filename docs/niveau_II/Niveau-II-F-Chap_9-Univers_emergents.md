@@ -97,7 +97,7 @@ L'espace $(\Omega_B, \mu_\beta)$ représente un multivers combinatoire :
 
 #### 9.1.2 — Point de vue interne
 
-Un univers est une sous-structure au sein d'une histoire :
+Un **univers** est une sous-structure au sein d'une histoire :
 - Il émerge à partir d'une nucléation
 - Il a sa propre dynamique causale interne
 - Un agent interne (au sens informationnel, formalisé plus tard) ne voit que son univers, pas l'histoire globale
@@ -129,7 +129,7 @@ $$\mathcal{U}(e_n, \omega) := \mathcal{F}(\mathrm{Germ}(e_n,\omega), \omega)$$
 
 où $\mathcal{F}(X,\omega)$ désigne l’ensemble des événements (et régions du substrat) causalement influencés par $X$ via la relation de précédence $\prec$ (clôture transitive de la dépendance immédiate $\to$).
 
-**Remarque (nucléation réussie vs avortée).** Si l’on adopte la convention que "nucléation" signifie *démarrage supercritique* (croissance non bornée), alors l’infinitude ci-dessous est vraie par définition. Si l’on souhaite distinguer des proto-nucléations (tentatives locales) des nucléations supercritiques, il suffit de réserver le terme "nucléation" au second cas.
+**Remarque (nucléation réussie vs avortée).** Si l’on adopte la convention que « nucléation » signifie *démarrage supercritique* (croissance non bornée), alors l’infinitude ci-dessous est vraie par définition. Si l’on souhaite distinguer des proto-nucléations (tentatives locales) des nucléations supercritiques, il suffit de réserver le terme « nucléation » au second cas.
 
 **Propriétés (sous hypothèses de localité et localement fini).**
 - $\mathcal{U}(e_n, \omega)$ est connexe (pour la connexité induite par le graphe causal des événements, ou par le graphe d’interaction restreint).
@@ -210,7 +210,7 @@ où :
 - $d$ : dimension effective
 - $g$ : structure de groupe de symétrie
 - $\Lambda$ : constante cosmologique effective
-- obs : type d'observateurs
+- obs : type d'observateurs (La composante "obs" est un placeholder illustratif : la définition opérationnelle d’un "observateur" interne n’est pas encore introduite à ce stade. On peut l’omettre entièrement dans $\Gamma^{\mathrm{univ}}$ jusqu’au Chapitre 10.
 
 ### 9.4 — Distribution des univers (réalisation de 9.I.δ)
 
@@ -220,7 +220,7 @@ L'ensemble des histoires dont le premier événement est une nucléation :
 
 \1
 
-> **Remarque (jauge de codage).** L’écriture "$e_0(\omega)$" et l’usage du décalage $\Theta$ reposent sur un choix de linéarisation (jauge). Les quantités introduites ici sont physiquement pertinentes dès lors que la propriété "être une nucléation" est invariante sous permutations d’événements concurrents (ou, à défaut, après moyennage sur les linéarisations). Sous stationnarité, tout indice est équivalent : $\mu_\beta(\mathsf{Nuc}_n)=\mu_\beta(\mathsf{Nuc}_0)$ pour tout $n$.
+> **Remarque (jauge de codage).** L’écriture « $e_0(\omega)$ » et l’usage du décalage $\Theta$ reposent sur un choix de linéarisation (jauge). Les quantités introduites ici sont physiquement pertinentes dès lors que la propriété « être une nucléation » est invariante sous permutations d’événements concurrents (ou, à défaut, après moyennage sur les linéarisations). Sous stationnarité, tout indice est équivalent : $\mu_\beta(\mathsf{Nuc}_n)=\mu_\beta(\mathsf{Nuc}_0)$ pour tout $n$.
 
 
 **Hypothèse :** Le taux total de nucléation est non nul :
@@ -277,7 +277,7 @@ $$\Pi^{\mathrm{univ}}(A) = 1$$
 
 #### 9.5.3 — Hiérarchie des types
 
-La distribution $\Pi^{\mathrm{univ}}$ induit une hiérarchie sur les types d'univers :
+La distribution $\Pi^{\mathrm{univ}}$ induit une **hiérarchie** sur les types d'univers :
 
 | Catégorie | Condition | Interprétation |
 |-----------|-----------|----------------|
@@ -297,8 +297,6 @@ Pour un ensemble de types $A \subseteq \mathcal{M}_{\mathrm{univ}}$, le compteur
 $$N_A(\omega) := |\{n \in \mathsf{Nuc}(\omega) : \Gamma^{\mathrm{univ}}(U_n(\omega)) \in A\}|$$
 
 C'est le nombre d'univers de type dans $A$ qui émergent dans l'histoire $\omega$.
-
-\1
 
 > **Condition suffisante (intensité finie).** Une condition naturelle assurant $0<\mathbb{E}_{\mu_\beta}[N_A]<\infty$ est l’existence d’une intensité finie de nucléations (par événement ou par “volume combinatoire”) dans des fenêtres finies, et une probabilité conditionnelle non nulle d’obtenir un type dans $A$. Dans les modèles à cutoff $\Lambda$, cette finitude est souvent automatique (espace effectif fini), puis discutée en limite $\Lambda\to\infty$.
 
@@ -452,7 +450,7 @@ La seconde interprétation nécessite de définir ce qu'est un "observateur" (ch
 
 La mesure $\hat{\mu}_\beta^A$ résout un problème conceptuel :
 
-> "Comment passer du point de vue 'créateur' (mesure $\mu_\beta$ sur toutes les histoires) au point de vue 'créature' (vue depuis un univers particulier) ?"
+> "Comment passer du point de vue 'Dieu' (mesure $\mu_\beta$ sur toutes les histoires) au point de vue 'créature' (vue depuis un univers particulier) ?"
 
 C'est une forme de conditionnement par l'existence qui évite les paradoxes du type "pourquoi quelque chose plutôt que rien".
 

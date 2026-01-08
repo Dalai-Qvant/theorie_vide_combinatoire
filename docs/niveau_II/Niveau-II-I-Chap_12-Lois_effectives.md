@@ -13,7 +13,7 @@ Ce chapitre clôt le niveau II en montrant comment un observateur peut reconstru
 
 > **Point clé :** Les "lois de la physique" ne sont pas données a priori. Elles émergent comme des régularités statistiques dans le processus d'observation, reconstruites par l'observateur grâce à l'ergodicité.
 
-Les constantes fondamentales, les symétries, et les équations de mouvement sont des paramètres effectifs, des descriptions optimales des corrélations observées.
+Les constantes fondamentales, les symétries, et les équations de mouvement sont des paramètres effectifs — des descriptions optimales des corrélations observées.
 
 ---
 
@@ -93,7 +93,7 @@ où $\mathcal{Y}$ est l'espace des observations possibles (ensemble fini ou dén
 
 #### 12.2.1 — Espace des histoires observables
 
-L'espace des trajectoires observables est :
+L'espace des **trajectoires observables** est :
 
 $$\mathcal{H}_\mathcal{O} := \mathcal{Y}^{\mathbb{N}} = \{(X_0, X_1, X_2, \ldots) : X_j \in \mathcal{Y}\}$$
 
@@ -104,6 +104,26 @@ muni de la σ-algèbre produit $\mathcal{H}_\sigma$.
 Pour un univers $U$ de type $u$ et un observateur $\mathcal{O}$, le processus d'observation définit une application :
 
 $$\mathbf{X} : U \mapsto (X_0, X_1, X_2, \ldots) \in \mathcal{H}_\mathcal{O}$$
+
+###### Complément : projection de secteur et variables internes octonioniques
+
+Dans l'option "fibre octonionique" du chapitre 10, un univers $U$ porte une couche informationnelle contenant des degrés internes (éventuellement invisibles). Le principe d'accès limité (12.I.α) se concrétise ici par le fait que l'observateur $\mathcal{O}$ ne lit pas directement la variable interne, mais une projection.
+
+On suppose qu'à chaque étape d'observation $j$, l'observateur dispose (explicitement ou implicitement) d'un choix de secteur observable noté $u_j$ (par exemple un axe interne sélectionné par un motif observateur, ou stabilisé par redondance). On associe alors une application de lecture :
+
+$$\Pi_{\mathcal{O},j} := \pi_{u_j} : \mathbb{O} \longrightarrow \mathbb{C}_{u_j}=\mathrm{span}\{1,u_j\}.$$
+
+La variable effectivement observée à l'étape $j$ peut être de la forme :
+
+$$X_j \;=\; F_j\!\left(\pi_{u_j}(\xi_j)\right),$$
+
+où :
+
+- $\xi_j$ désigne l'information interne disponible (par exemple un état attaché à certaines cellules à l'étape $j$),
+- $F_j$ est une fonction de lecture à valeurs dans $\mathcal{Y}$ (par exemple partie réelle, norme, symbole discret, compteur, etc.),
+- la composante orthogonale au plan $\mathbb{C}_{u_j}$ reste invisible pour cet observateur.
+
+**Remarque (impact sur la reconstruction de la MQ au niveau III).** Dans ce cadre, la "physique quantique" reconstruite au niveau III porte sur la mesure d'observation $\mu_{\mathcal{O}}$ et sur les variables $(X_j)$ à valeurs dans $\mathcal{Y}$ ; l'option octonionique intervient uniquement comme structure interne et comme mécanisme de sélection de secteurs/projections. On n'introduit pas d'amplitudes octonioniques fondamentales, et l'émergence d'une description complexe peut être comprise comme une stabilisation d'un secteur $\mathbb{C}_{u}$ dans l'observation.
 
 #### 12.2.3 — Mesure d'observation
 
@@ -135,7 +155,7 @@ pour tout $k \geq 0$ et tous boréliens $A_0, \ldots, A_n$.
 
 #### 12.3.2 — Loi effective
 
-**Définition 12.3 (Loi effective).** Une loi effective pour $\mathcal{O}$ est un ensemble de relations probabilistes satisfaites par $(X_j)$ sous $\mu_\mathcal{O}$ :
+**Définition 12.3 (Loi effective).** Une **loi effective** pour $\mathcal{O}$ est un ensemble de relations probabilistes satisfaites par $(X_j)$ sous $\mu_\mathcal{O}$ :
 
 | Type de régularité | Statut / lecture |
 |---|---|
@@ -166,7 +186,7 @@ En général, le noyau de transition dépend de tout le passé. Dans beaucoup de
 
 #### 12.4.1 — Ergodicité interne
 
-On suppose $\mu_\mathcal{O}$ stationnaire pour la translation $\theta$ et, pour une typicalité unique, ergodique :
+On suppose $\mu_\mathcal{O}$ **stationnaire** pour la translation $\theta$ et, pour une typicalité unique, ergodique :
 
 $$\theta : \mathcal{H}_\mathcal{O} \to \mathcal{H}_\mathcal{O}, \quad (\theta \mathbf{X})_j := X_{j+1}$$
 
@@ -325,7 +345,7 @@ Les "lois de la physique" dans ce formalisme sont descriptives, pas prescriptive
 
 **Question :** Les lois inférées par différents observateurs dans une même phase (et dans un même type d’univers) sont‑elles cohérentes ? Sous quelles conditions convergent‑elles vers des « lois universelles » ?
 
-***Réponse** (niveau II, forme minimale).* Si la mesure de phase $\mu_\beta^{\{u\}}$ est mélangeante (au sens d’une décroissance des corrélations / mixing) et si les observateurs sont typiques (par ex. via une pondération de type *size‑bias* / Palm, Ch.9) avec des protocoles d’observation $\mathbf X$ comparables, alors les paramètres effectifs $\theta^*$ et les régularités macroscopiques inférées coïncident presque sûrement (à jauge près). Des divergences persistantes signalent en général un mélange de phases (non‑ergodicité), une hétérogénéité à grande échelle, ou des protocoles $\mathbf X$ non équivalents.
+*Réponse (niveau II, forme minimale).* Si la mesure de phase $\mu_\beta^{\{u\}}$ est mélangeante (au sens d’une décroissance des corrélations / mixing) et si les observateurs sont typiques (par ex. via une pondération de type *size‑bias* / Palm, Ch.9) avec des protocoles d’observation $\mathbf X$ comparables, alors les paramètres effectifs $\theta^*$ et les régularités macroscopiques inférées coïncident presque sûrement (à jauge près). Des divergences persistantes signalent en général un mélange de phases (non‑ergodicité), une hétérogénéité à grande échelle, ou des protocoles $\mathbf X$ non équivalents.
 
 ### Sur la reconstruction de la géométrie
 
@@ -339,7 +359,7 @@ La présente section ne vise pas à dériver en détail une géométrie continue
 
 ### Sur le lien avec la physique quantique
 
-Le formalisme reste classique jusqu'ici. Pour retrouver la mécanique quantique, il faudra montrer que :
+Le formalisme reste classique jusqu'ici. Pour retrouver la mécanique quantique, il faudrait montrer que :
 - Les observables satisfont des relations d'incertitude
 - Les corrélations violent les inégalités de Bell
 - La dynamique effective est unitaire
@@ -350,12 +370,13 @@ Ces questions sont prévues pour le niveau III.
 
 ## Lien avec les autres chapitres
 
-| Chapitre | Relation avec Ch.12 |
-|----------|---------------------|
-| Ch.10 (Information) | Fournit les témoins et la mémoire |
-| Ch.11 (Temps) | Fournit le temps interne $\tau_\mathcal{O}$ |
-| Ch.9 (Univers) | Fournit $\mu_\beta^{\{u\}}$ |
-| Ch.8 (Sélection) | Fournit $\mu_\beta$ qui détermine les lois |
+| Chapitre            | Relation avec Ch.12                                          |
+| ------------------- | ------------------------------------------------------------ |
+| Ch.5 (Observables)  | Les $X_j$ sont des observables/coarse-grainings mesurables et définissent l'espace $\mathcal{H}_\mathcal{O}$ |
+| Ch.10 (Information) | Fournit les témoins, la mémoire et la lecture/projection $\Pi_{\mathcal{O}}$ (sélection de secteur, optionnel) |
+| Ch.11 (Temps)       | Fournit le temps interne $\tau_\mathcal{O}$                  |
+| Ch.9 (Univers)      | Fournit $\mu_\beta^{\{u\}}$                                  |
+| Ch.8 (Sélection)    | Fournit $\mu_\beta$ qui détermine les lois                   |
 
 ---
 

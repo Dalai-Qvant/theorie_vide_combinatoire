@@ -116,7 +116,38 @@ définie par $\mu_O(A) = \mu(O^{-1}(A))$.
 | Densité asymptotique d'un type        | $[0, 1]$     |
 | Complexité à l'étape $n$              | $\mathbb{R}$ |
 
-------
+#### 5.2.3 — Observables hypercomplexes et projections d'observation
+
+Dans ce chapitre, un observable est une application mesurable $O:\Omega_B \to X$ où $X$ peut être un espace de structures riche (pas nécessairement numérique). Cette souplesse permet d'introduire, au niveau II, des observables qui prennent leurs valeurs dans une structure "hypercomplexe" (par exemple une fibre octonionique), sans supposer que ces valeurs soient des amplitudes fondamentales.
+
+**Idée directrice :** la quantité "physiquement accessible" n'est pas la valeur hypercomplexe brute, mais une projection (ou une lecture) construite à partir d'elle.
+
+**(a) Observable interne (caché).** On peut considérer un observable interne :
+
+$$O_{\mathbb{O}} : \Omega_B \longrightarrow \mathbb{O}$$
+
+où $\mathbb{O}$ désigne ici une structure octonionique (au sens opérationnel du niveau II : typiquement une représentation discrète/finie portée par la couche informationnelle du chapitre 10).
+
+**(b) Lecture / projection associée à un observateur.** Un observateur $\mathcal{O}$ (chapitre 10) n'a accès qu'à une partie de l'information. On formalise cela par une application de lecture
+
+$$\Pi_{\mathcal{O}} : \mathbb{O} \longrightarrow Y_{\mathcal{O}}$$
+
+où $Y_{\mathcal{O}}$ est l'espace des résultats accessibles (souvent $Y_{\mathcal{O}}=\mathbb{R}$, ou $Y_{\mathcal{O}}=\mathbb{C}$ via la sélection d'un plan complexe effectif).
+
+L'observable effectivement mesurée est alors :
+
+$$O_{\mathrm{obs}} := \Pi_{\mathcal{O}} \circ O_{\mathbb{O}} : \Omega_B \to Y_{\mathcal{O}}.$$
+
+**Remarque (cohérence avec "mesure" au sens statistique).** Les probabilités et les lois effectives portent toujours sur des variables à valeurs dans des espaces usuels (réels, complexes, discrets), via $O_{\mathrm{obs}}$. Le rôle de la structure hypercomplexe est celui d'une couche interne (potentiellement invisible) influençant les paramètres effectifs, mais pas celui d'une amplitude quantique fondamentale.
+
+**Exemple canonique : projection vers un secteur complexe.**
+Si l'observateur $\mathcal{O}$ sélectionne un axe interne $u$ avec $u^2=-1$ (cf. chapitres 10 et 12), on peut définir une projection :
+
+$$\Pi_{\mathcal{O}}=\pi_u:\mathbb{O}\to \mathbb{C}_u=\mathrm{span}\{1,u\}.$$
+
+Les quantités réelles mesurées (énergie, densités, fréquences, etc.) proviennent ensuite de fonctions de $\pi_u(x)$ (norme, partie réelle, moments, etc.).
+
+---
 
 ### 5.3 — Observables cylindriques
 
@@ -375,7 +406,8 @@ C'est cette concentration qui permettra de parler de "phases" bien définies au 
 | Ch.6 (Phases)        | Utilise $\Gamma$ pour définir les phases macroscopiques      |
 | Ch.7 (Nucléation)    | Les taux $\lambda_{[\mathcal{G}]}$ sont des observables sur $\Omega_B$ |
 | Ch.9 (Univers)       | $\Gamma^{\mathrm{univ}}$ est un coarse-graining spécifique   |
-| Ch.10 (Observateurs) | L'observateur définit implicitement un $\Gamma$              |
+| Ch.10 (Observateurs) | L'observateur fixe un $\Gamma$ et une lecture/projection $\Pi_{\mathcal{O}}$ |
+| Ch.12 (Lois)         | Reconstruit $\mu_\mathcal{O}$ et les lois effectives à partir de $O_{\mathrm{obs}}$ |
 
 ------
 

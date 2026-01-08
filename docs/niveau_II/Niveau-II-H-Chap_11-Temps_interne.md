@@ -11,7 +11,7 @@ Ce chapitre montre comment un temps émergent apparaît pour un observateur :
 - C'est une paramétrisation monotone des événements internes
 - Il n'est unique qu'à reparamétrisation près (pas d'unité absolue)
 
-> **Point clé :** Le temps n'est pas une donnée primitive. Il émerge de la structure causale vue par un observateur : c'est la succession de ses expériences qui définit son "horloge".
+> **Point clé :** Le temps n'est pas une donnée primitive. Il émerge de la structure causale vue par un observateur — c'est la succession de ses expériences qui définit son "horloge".
 
 ---
 
@@ -88,7 +88,7 @@ avec :
 - $\pi_M : \mathcal{S}_{C_\Sigma(R)} \to \mathcal{S}_M$ : projection sur la mémoire
 - $m := \pi_M(s_{C_\Sigma(R)}) \in \mathcal{S}_M$ : état de mémoire
 
-**Lien avec le Chapitre 10.** La mémoire $M$ est une sous-structure informationnelle (cellules + dynamique de copie) ; son existence et sa stabilité seront, au niveau II, soumises à un compromis de sélection (coût informationnel dans le principe S), afin d’éviter une "mémoire gratuite".
+**Lien avec le Chapitre 10.** La mémoire $M$ est une sous-structure informationnelle (cellules + dynamique de copie) ; son existence et sa stabilité seront, au niveau II, soumises à un compromis sélectionnel (coût informationnel dans le principe S), afin d’éviter une “mémoire gratuite”.
 
 
 ---
@@ -121,7 +121,7 @@ E_{\mathrm{int}}(U,\mathcal O) := \{\,k\ge 0\; :\; m_{k+1}\neq m_k\,\}.
 $$
 Autrement dit, $k\in E_{\mathrm{int}}$ si et seulement si la transition globale $\widehat e_k: \widehat H_k\to \widehat H_{k+1}$ induit une modification de l’état de mémoire.
 
-**Définition (Événements internes).** L’ensemble des événements internes (au sens "événements vécus") est :
+**Définition (Événements internes).** L’ensemble des événements internes (au sens “événements vécus”) est :
 $$
 E_{\mathrm{int}}^{\mathrm{ev}}(U,\mathcal O) := \{\,\widehat e_k\in E(U) : k\in E_{\mathrm{int}}\,\}.
 $$
@@ -134,7 +134,7 @@ $$
 
 $$E_{\mathrm{int}} = \{k_0 < k_1 < k_2 < \cdots\}$$
 
-La trace réduite est :
+La **trace réduite** est :
 
 $$m^\#_j := m_{k_j}, \quad j \geq 0$$
 
@@ -175,7 +175,7 @@ $$
 où $\iota:\mathbb N\to E_{\mathrm{int}}^{\mathrm{ev}}$ envoie $j$ sur l’événement $\widehat e_{k_j}$ (ordre de jauge induit par l’énumération).
 
 **Interprétation.**
-- La suite $(m^\#_j)$ est la succession des états de mémoire distincts ("instants vécus").
+- La suite $(m^\#_j)$ est la succession des états de mémoire distincts (“instants vécus”).
 - Le poset $(E_{\mathrm{int}}^{\mathrm{ev}},\prec_{\mathrm{int}})$ encode les contraintes causales internes (certaines mises à jour peuvent être concurrentes).
 - Le choix $\iota$ fixe une résolution linéaire de ces contraintes (une manière de raconter l’expérience comme une suite).
 
@@ -276,11 +276,11 @@ On distinguera donc deux niveaux :
 $$
 \rho^{-1} := \mathbb E_{\mu_\beta^{\{u\}}}[k_{j+1}-k_j] < \infty.
 $$
-Sous cette hypothèse (et des conditions techniques standard), on peut définir une dynamique induite "de mise à jour en mise à jour" :
+Sous cette hypothèse (et des conditions techniques standard), on peut définir une dynamique induite “de mise à jour en mise à jour” :
 $$
 \Theta_{\mathrm{int}}(\omega) := \Theta^{\tau(\omega)}(\omega),
 $$
-où $\tau(\omega)=\min\{n\ge 1:\; n\in E_{\mathrm{int}}(\omega)\}$ est le premier temps de mise à jour après 0. La mesure "vue depuis une mise à jour typique" (type Palm/induite) est alors stationnaire pour $\Theta_{\mathrm{int}}$.
+où $\tau(\omega)=\min\{n\ge 1:\; n\in E_{\mathrm{int}}(\omega)\}$ est le premier temps de mise à jour après 0. La mesure “vue depuis une mise à jour typique” (type Palm/induite) est alors stationnaire pour $\Theta_{\mathrm{int}}$.
 
 Dans ce cas, le processus $(X_j)$ peut être stationnaire :
 $$
@@ -288,7 +288,7 @@ $$
 $$
 dès que chaque $X_j$ dépend d’un voisinage causal borné autour de l’événement interne $\widehat e_{k_j}$ et d’une procédure de lecture fixée.
 
-**Conséquence.** L’observateur voit des régularités invariantes dans son temps interne — base opérationnelle des "lois effectives" (Chapitre 12).
+**Conséquence.** L’observateur voit des régularités invariantes dans son temps interne — base opérationnelle des “lois effectives” (Chapitre 12).
 
 ---
 
@@ -331,14 +331,14 @@ Le principe 11.I.δ affirme que le temps n'est défini qu'à bijection monotone 
 
 ### Sur l'absence de flèche du temps fondamentale
 
-L'ordre causal $\prec$ impose une orientation *passé → futur* au sens des dépendances (Write/Read). En revanche, le cadre ne fournit aucune métrique temporelle fondamentale : pas d’unité absolue, pas de "durée" primitive.
+L'ordre causal $\prec$ impose une orientation *passé → futur* au sens des dépendances (Write/Read). En revanche, le cadre ne fournit aucune métrique temporelle fondamentale : pas d’unité absolue, pas de “durée” primitive.
 
 Il faut toutefois distinguer deux idées :
 
 - Inverser $\prec$ (échanger passé/futur dans le graphe) n’est pas, en général, une symétrie de la théorie.
-- Une véritable symétrie de renversement du temps exigerait une structure de réversibilité (règles inversibles, ou paires de règles, et une mesure compatible — type balance détaillée / "detailed balance" au niveau II).
+- Une véritable symétrie de renversement du temps exigerait une structure de réversibilité (règles inversibles, ou paires de règles, et une mesure compatible — type balance détaillée / “detailed balance” au niveau II).
 
-La "flèche du temps" au sens thermodynamique (croissance d’entropie) et au sens informationnel (accumulation de traces et de témoins) devrait émerger de :
+La “flèche du temps” au sens thermodynamique (croissance d’entropie) et au sens informationnel (accumulation de traces et de témoins) devrait émerger de :
 - conditions initiales (faible entropie effective) et/ou
 - sélection par $\mu_\beta$ / principe S (favorisant certains régimes) et/ou
 - irréversibilité pratique liée à la redondance des enregistrements (Chapitre 10).

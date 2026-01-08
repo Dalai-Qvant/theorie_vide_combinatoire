@@ -105,6 +105,51 @@ $$\kappa(c) := |\mathcal{S}_c| \in \mathbb{N}$$
 
 **Convention (État neutre).** Chaque $\mathcal{S}_c$ contient un élément distingué $\omega_0^{(c)}$ — l'état par défaut des cellules nouvellement créées.
 
+##### Option : fibre octonionique comme espace d'information local
+
+Cette section propose un choix de représentation (optionnel) pour les espaces d'information locaux $\mathcal{S}_c$, compatible avec l'objectif du niveau I : simplicité + ouverture, puis enrichissement progressif par filtres.
+
+L'idée est d'utiliser la couche informationnelle pour porter une structure interne de type octonionique, sans modifier la dynamique structurelle de niveau I : si l'on "oublie" l'information, on retrouve exactement l'évolution du substrat.
+
+###### (a) Version minimale (strictement finie) : directions octonioniques
+
+On fixe un alphabet interne :
+
+$$\mathcal{U} := \{0, \pm e_1, \ldots, \pm e_7\}$$
+
+où $0$ est l'état neutre, et $\pm e_i$ sont des "directions imaginaires" (symboliques).  
+On prend alors, pour certaines cellules $c$ (par exemple les nœuds) :
+
+$$\mathcal{S}_c^{(\mathbb{O})} := \mathcal{S}_c^{(\mathrm{base})} \times \mathcal{U} \times \mathcal{G},$$
+
+où :
+
+- $\mathcal{S}_c^{(\mathrm{base})}$ est l'information déjà prévue (témoin, tag, registre, etc.),
+- $\mathcal{U}$ code un axe interne visible (utile pour définir une projection complexe),
+- $\mathcal{G}$ est un petit ensemble fini d'automorphismes/discrétisations de repère (permutations + signes compatibles avec le plan de Fano), servant à comparer/transport­er des directions internes entre cellules.
+
+Cette version est volontairement frugale : elle ne contient pas des "réels" ni des coefficients continus ; elle fournit un socle combinatoire pour l'émergence de secteurs observables.
+
+###### (b) Version enrichie (toujours finie) : coefficients bornés
+
+Si l'on veut une information interne plus expressive, on peut remplacer $\mathcal{U}$ par un ensemble fini de "petits octonions" à coefficients bornés :
+
+$$\mathcal{O}_{M} := \left\{a_0 + \sum_{i=1}^7 a_i e_i \;:\; a_j \in \{-M,\ldots,M\}\right\}$$
+
+et poser $\mathcal{S}_c^{(\mathbb{O})} := \mathcal{S}_c^{(\mathrm{base})}\times \mathcal{O}_M \times \mathcal{G}$.
+
+Ici, $M$ joue le rôle de cutoff informationnel. Les limites vers des structures continues (si nécessaires plus tard) relèvent d'un coarse-graining / d'une limite d'échelle, et non d'un choix micro.
+
+###### (c) Mise à jour locale : règles augmentées compatibles
+
+Pour une règle structurelle $r$, une règle augmentée $\widehat r=(r,U_r)$ met à jour les états internes en restant locale. Exemples typiques de $U_r$ :
+
+- **Copie/propagation de témoins** : duplication d'une partie de $\mathcal{S}_c^{(\mathrm{base})}$ vers des cellules voisines (mécanisme de redondance).
+- **Alignement d'axes** : si une interaction locale favorise un secteur observable stable, on peut mettre à jour $u\in\mathcal{U}$ par règle de majorité (ou par minimisation d'un coût local) entre cellules adjacentes.
+- **Transport de repère** : mise à jour de l'élément $\mathcal{G}$ pour préserver la cohérence d'identification des directions internes.
+
+**Point crucial :** cette couche interne n'a pas vocation à fournir des amplitudes fondamentales ; elle fournit une mémoire interne / structure de symétrie qui pourra être partiellement "vue" via une projection d'observation (chapitre 12).
+
 #### 10.1.3 — Configurations informationnelles
 
 **Définition 10.3 (Espace régional).** Pour $U \subseteq C_\Sigma(H)$ fini :
@@ -157,7 +202,7 @@ $$\widehat{e}_n = (\widehat{H}_n, r_n, \iota_n, \widehat{H}_{n+1})$$
 
 **Remarque importante :** La couche informationnelle n'affecte pas le crédit $B$ ni la complexité $K$. Elle est une structure auxiliaire du niveau II. Par construction, nous imposons que la dynamique structurelle et la fonction de complexité $K$ ne dépendent pas des états informationnels. La couche info ne rétroagit pas sur le niveau I.
 
-**Remarque (coût informationnel et sélection).** Le choix d’introduire une couche informationnelle sans rétroaction signifie : les contraintes de possibilité du niveau I (règles structurales, causalité, budget combinatoire) ne dépendent pas de l’état informationnel. Cela n’implique pas que la mémoire soit "gratuite" au niveau II : le principe de sélection (Ch.8) pourra pénaliser explicitement les configurations où l’information prolifère (taille de l’alphabet, densité de cellules actives, redondance excessive), afin d’éviter une inflation triviale de bits.
+**Remarque (coût informationnel et sélection).** Le choix d’introduire une couche informationnelle sans rétroaction signifie : les contraintes de possibilité du niveau I (règles structurales, causalité, budget combinatoire) ne dépendent pas de l’état informationnel. Cela n’implique pas que la mémoire soit « gratuite » au niveau II : le principe de sélection (Ch.8) pourra pénaliser explicitement les configurations où l’information prolifère (taille de l’alphabet, densité de cellules actives, redondance excessive), afin d’éviter une inflation triviale de bits.
 
 
 ---
@@ -179,7 +224,7 @@ tel que :
 
 
 
-**Condition de fiabilité (recommandée).** Pour éviter que "tout" puisse être déclaré témoin a posteriori, on introduit un critère de corrélation : on dit que $(U,f)$ est un témoin $\varepsilon$‑fiable de la propriété $\mathcal P$ (dans une phase ou un type d’univers $u$), si, sous la mesure conditionnée $\mu_\beta^{\{u\}}$,
+**Condition de fiabilité (recommandée).** Pour éviter que « tout » puisse être déclaré témoin a posteriori, on introduit un critère de corrélation : on dit que $(U,f)$ est un témoin $\varepsilon$‑fiable de la propriété $\mathcal P$ (dans une phase ou un type d’univers $u$), si, sous la mesure conditionnée $\mu_\beta^{\{u\}}$,
 \[
 \mathbb P\big(f(s_U)=1\mid \mathcal P\big)\ge 1-\varepsilon,
 \qquad
@@ -236,7 +281,7 @@ Sous la mesure $\mu_\beta^{\{u\}}$, $R_{[\mathcal{P}]}$ devient une variable al�
 \]
 
 Autrement dit, la redondance est arbitrairement grande avec probabilité arbitrairement proche de 1 (sans exiger une limite asymptotique littérale).  
-*(Version forte — optionnelle : on peut imposer la condition asymptotique $\lim_{R_0\to\infty}\mu_\beta^{\{u\}}(R_{[\mathcal{P}]}\ge R_0)=1$ si l’univers est infini et si l’on vise une objectivité "parfaite".)*
+*(Version forte — optionnelle : on peut imposer la condition asymptotique $\lim_{R_0\to\infty}\mu_\beta^{\{u\}}(R_{[\mathcal{P}]}\ge R_0)=1$ si l’univers est infini et si l’on vise une objectivité « parfaite ».)*
 
 **Interprétation :**
 - De nombreuses régions disjointes contiennent des témoins cohérents
@@ -281,8 +326,7 @@ Un motif $\mathcal{O}$ est un observateur s'il satisfait :
 | **Couplage informatif** | Acquisition de témoins sur l'environnement |
 | **Persistance** | Mémoire stable sur de longues échelles causales |
 
-**Comptage et point de vue typique.** Pour parler d’"observateur typique", il faut préciser un schéma de comptage afin d’éviter le double comptage de motifs qui se recouvrent. Deux choix standards (souvent équivalents en grande taille sous hypothèses de mélange) :
-
+**Comptage et point de vue typique.** Pour parler d’« observateur typique », il faut préciser un schéma de comptage afin d’éviter le double comptage de motifs qui se recouvrent. Deux choix standards (souvent équivalents en grande taille sous hypothèses de mélange) :
 - **Densité par volume combinatoire** : compter, dans une grande fenêtre (volume) $A$, un ensemble maximal de copies d’observateurs disjointes (packing) et définir une densité $\rho_{\mathcal O} = \lim_{A\uparrow \mathcal U} N_A(\mathcal O)/V(A)$.
 - **Point de vue Palm / size-biased** (Ch.9) : échantillonner un univers proportionnellement à son “poids” (volume, complexité, nombre d’instances), puis étudier la distribution conditionnelle des observateurs à l’intérieur.
 
@@ -361,11 +405,12 @@ C'est une notion classique d'irréversibilité pratique. La question de savoir s
 
 ## Lien avec les autres chapitres
 
-| Chapitre | Relation avec Ch.10 |
-|----------|---------------------|
-| Ch.9 (Univers) | Fournit $U_n(\omega)$ comme support des observateurs |
-| Ch.11 (Temps) | Utilise la mémoire $M$ pour définir le temps interne |
-| Ch.12 (Lois) | Les lois effectives sont reconstruites par les observateurs |
+| Chapitre           | Relation avec Ch.10                                          |
+| ------------------ | ------------------------------------------------------------ |
+| Ch.5 (Observables) | Les lectures/projections des observateurs définissent O_{\mathrm{obs}} et donc les macrostates |
+| Ch.9 (Univers)     | Fournit U_n(\omega) comme support des observateurs           |
+| Ch.11 (Temps)      | Utilise la mémoire M pour définir le temps interne           |
+| Ch.12 (Lois)       | La reconstruction des lois s'appuie sur la projection $\mathbf{X}$ et sur les lectures $\Pi_{\mathcal{O}}$ (secteurs observables) |
 
 ---
 
