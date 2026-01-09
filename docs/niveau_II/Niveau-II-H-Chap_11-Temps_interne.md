@@ -116,15 +116,14 @@ La suite $(m_k)_{k \geq 0}$ est la trace interne brute de l'observateur. Les ind
 La trace brute $(m_k)$ contient beaucoup d’étapes où la mémoire ne change pas. On isole donc les instants où l’observateur met effectivement à jour sa mémoire.
 
 **Définition (Indices de mise à jour).** On définit l’ensemble des indices de mise à jour :
-$$
-E_{\mathrm{int}}(U,\mathcal O) := \{\,k\ge 0\; :\; m_{k+1}\neq m_k\,\}.
-$$
+
+$E_{\mathrm{int}}(U,\mathcal O) := \{\,k\ge 0\; :\; m_{k+1}\neq m_k\,\}.$
+
 Autrement dit, $k\in E_{\mathrm{int}}$ si et seulement si la transition globale $\widehat e_k: \widehat H_k\to \widehat H_{k+1}$ induit une modification de l’état de mémoire.
 
 **Définition (Événements internes).** L’ensemble des événements internes (au sens “événements vécus”) est :
-$$
-E_{\mathrm{int}}^{\mathrm{ev}}(U,\mathcal O) := \{\,\widehat e_k\in E(U) : k\in E_{\mathrm{int}}\,\}.
-$$
+
+$E_{\mathrm{int}}^{\mathrm{ev}}(U,\mathcal O) := \{\,\widehat e_k\in E(U) : k\in E_{\mathrm{int}}\,\}.$
 
 **Remarque (localité).** Dans les constructions usuelles (Chapitre 10), le fait que $m_{k+1}\neq m_k$ dépend d’un voisinage causal borné autour de la région $R$ et des cellules $M\subseteq C_\Sigma(R)$.
 
@@ -136,7 +135,7 @@ $$E_{\mathrm{int}} = \{k_0 < k_1 < k_2 < \cdots\}$$
 
 La **trace réduite** est :
 
-$$m^\#_j := m_{k_j}, \quad j \geq 0$$
+$m^\#_j := m_{k_j}, \quad j \geq 0$
 
 C'est la suite des états internes successifs distincts vus par l'observateur.
 

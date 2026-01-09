@@ -30,7 +30,7 @@ Pour citer ce travail :
 
 **Contributeurs** : Voir la liste dans le README.md
 
-**Source** : https://github.com/[votre-username]/vide-combinatoire
+**Source** : https://github.com/Dalai-Qvant/theorie_vide_combinatoire
 
 **Licence** : CC BY-SA 4.0
 
@@ -39,7 +39,7 @@ Pour citer ce travail :
 ```
 "Vers une théorie du vide combinatoire" par Dalai-qvant et contributeurs,
 utilisé sous licence CC BY-SA 4.0.
-Source : https://github.com/[votre-username]/vide-combinatoire
+Source : https://github.com/Dalai-Qvant/theorie_vide_combinatoire
 ```
 
 ## Notes pour les contributeurs
@@ -60,4 +60,4 @@ La licence **CC BY-SA 4.0** a été choisie car elle :
 
 ---
 
-© 2024-2025 Dalai-qvant et contributeurs. Ce travail est sous licence CC BY-SA 4.0.
+© 2024-2026 Dalai-qvant et contributeurs. Ce travail est sous licence CC BY-SA 4.0.

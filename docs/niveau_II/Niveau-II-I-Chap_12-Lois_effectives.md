@@ -1,3 +1,9 @@
+# Niveau II
+
+# Émergence statistique
+
+---
+
 # Chapitre 12 — Lois effectives reconstruites par un observateur
 
 ---

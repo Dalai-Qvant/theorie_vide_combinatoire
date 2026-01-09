@@ -9,6 +9,7 @@
 Développer une théorie fondamentale de la physique basée sur un substrat combinatoire minimal, sans présupposer de géométrie ni de temps externe, et capable de faire émerger :
 
 - La mécanique quantique
+- Le modèle standard
 - L'espace-temps relativiste
 - Les équations d'Einstein
 - La phénoménologie observée de notre univers
@@ -33,7 +34,7 @@ Au lieu de quantifier la gravité ou de géométriser la mécanique quantique, c
 
 ## Architecture théorique
 
-Le modèle se construit en **5 niveaux progressifs** :
+Le modèle se construit en **5 niveaux progressifs** (non exhaustifs) :
 
 ### Niveau I : Fondations combinatoires
 - **Substrat** : hypergraphes abstraits
@@ -48,8 +49,6 @@ Le modèle se construit en **5 niveaux progressifs** :
 
 ### Niveau III : Structure quantique
 - Dérivation axiomatique de la mécanique quantique
-- Théorèmes fondamentaux (réversibilité, contextualité, Born)
-- Sans postuler l'espace de Hilbert
 
 ### Niveau IV : Géométrie et relativité
 - Émergence de l'espace-temps lorentzien
@@ -57,6 +56,7 @@ Le modèle se construit en **5 niveaux progressifs** :
 - Équations d'Einstein effectives
 
 ### Niveau V : Phénoménologie
+- Gravité quantique
 - Constantes physiques effectives
 - Matière et énergie noire émergentes
 - Prédictions testables
@@ -88,19 +88,21 @@ Le modèle se construit en **5 niveaux progressifs** :
 ## Questions ouvertes prioritaires
 
 ### Validation mathématique
-1. Les démonstrations des théorèmes III (quantique) sont-elles rigoureuses ?
-2. L'émergence de la signature (1,3) est-elle générique ou fine-tuned ?
-3. Les hypothèses minimales suffisent-elles ou faut-il en ajouter ?
+Les démonstrations sont-elles toutes rigoureuses ?
 
 ### Simulations informatiques
-4. Peut-on simuler l'émergence d'une géométrie lisse à partir des règles ?
-5. Les phases stables prédites apparaissent-elles numériquement ?
-6. Quelle taille de système faut-il pour observer l'émergence ?
+Peut-on simuler l'émergence d'une géométrie lisse à partir des règles ?
+
+Les phases stables prédites apparaissent-elles numériquement ?
+
+Quelle taille de système faut-il pour observer l'émergence ?
 
 ### Phénoménologie
-7. Les prédictions sur la matière/énergie noire sont-elles testables ?
-8. Le modèle prédit-il des déviations mesurables par rapport au Modèle Standard ?
-9. Y a-t-il des signatures cosmologiques distinctives ?
+Les prédictions sur la matière/énergie noire sont-elles testables ?
+
+Le modèle prédit-il des déviations mesurables par rapport au Modèle Standard ?
+
+Y a-t-il des signatures cosmologiques distinctives ?
 
 ---
 
@@ -134,7 +136,7 @@ Ce projet a besoin de :
 
 ### Expertises mathématiques
 - Théorie des hypergraphes
-- C*-algèbres et géométrie non-commutative
+- C*-algèbres, nombre hypercomplexes et géométrie non-commutative
 - Théorie des probabilités et processus stochastiques
 
 ### Expertises physiques

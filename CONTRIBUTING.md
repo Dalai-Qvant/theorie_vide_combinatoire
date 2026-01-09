@@ -29,10 +29,11 @@ Ce projet est collaboratif et ouvert, mais maintient une rigueur scientifique. N
 
 **Exemple :**
 ```
-Titre : [Ch14 - Théorème R] Hypothèse manquante sur la réversibilité
+Titre : [Préambule du Niveau III] hypothèses très fortes à justifier
 
-Dans la démonstration du Théorème R (réversibilité des états purs), 
-ligne 47, l'argument suppose implicitement que...
+0.4.2. Objectifs spécifiques
+OS3 (treillis orthomodulaire → Hilbert) 
+Tu annonces Piron/Solèr (ou équivalents). Problème : ces théorèmes demandent des hypothèses non triviales sur le treillis...
 ```
 
 ### 2. Clarifications et améliorations rédactionnelles
@@ -192,7 +193,7 @@ Les contributeurs seront reconnus de plusieurs façons :
 
 ## Communication
 
-- **Discord** : [Lien à venir] - Discussions rapides, questions
+- **Discord** : https://discord.com/channels/1456242551601238112/1456242552163405859
 - **GitHub Issues** : Suivi des corrections et problèmes identifiés
 - **GitHub Discussions** : Échanges ouverts, idées nouvelles
 - **Email** : [À définir] - Contact direct avec le mainteneur principal

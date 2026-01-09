@@ -10,12 +10,12 @@
 
 ## Vue d'ensemble
 
-Ce projet développe une théorie fondamentale visant à dériver la mécanique quantique, la relativité et l'espace-temps à partir d'un substrat combinatoire minimal, sans présupposer de géométrie ni de temps externe.
+Ce projet développe une théorie fondamentale visant à dériver la mécanique quantique, le modèle standard, la relativité et l'espace-temps à partir d'un substrat combinatoire minimal, sans présupposer de géométrie ni de temps externe.
 
 ### Objectifs principaux
 
 - **Fonder la physique** sur des règles de réécriture discrètes et locales
-- **Faire émerger** la mécanique quantique, l'espace-temps lorentzien et les équations d'Einstein
+- **Faire émerger** la mécanique quantique, le modèle standard, l'espace-temps lorentzien et les équations d'Einstein
 - **Expliquer** des phénomènes (matière noire, énergie noire émergentes)
 - **Prédire** des phénomènes nouveaux
 - **Tester** le modèle par simulations et expériences
@@ -41,14 +41,14 @@ Axiomes fondamentaux (A0-A3), dynamique du vide sans temps externe, nucléation
 ### [Niveau II - L'espace des histoires et la causalité](docs/niveau_II/)
 Structures probabilistes, observables, phases stables, univers émergents, temps interne
 
-### [Niveau III - Dérivation de la mécanique quantique](docs/niveau-III-quantique/)
-Théorèmes fondamentaux (R, C, Sy, H, M) menant à la structure quantique et à la règle de Born
+### [Niveau III - Dérivation de la mécanique quantique](docs/niveau-III/)
+Étude du vide combinatoire menant à la structure quantique
 
-### [Niveau IV - Espace-temps et relativité](docs/niveau-IV-espace-temps/)
-Émergence de la métrique lorentzienne, équations d'Einstein, couplage champs-géométrie
+### [Niveau IV - Espace-temps et relativité](docs/niveau-IV/)
+Signatures (1,3),  émergence de la métrique lorentzienne, équations d'Einstein, couplage champs-géométrie, modèle standard
 
-### [Niveau V - Phénoménologie émergente](docs/niveau-V-phenomenologie/)
-Signatures (1,3), dimensions spatiales, constantes effectives, matière/énergie noire, testabilité
+### [Niveau V - Phénoménologie émergente](docs/niveau-V/)
+Gravité quantique, trous noirs, constantes effectives, matière noire, énergie noire, testabilité
 
 ---
 
@@ -57,8 +57,8 @@ Signatures (1,3), dimensions spatiales, constantes effectives, matière/énergie
 ### Pour les lecteurs
 
 1. **Lecture rapide** : Consultez le [Livre blanc](LIVRE_BLANC.md) pour une vue d'ensemble
-2. **Compréhension générale** : Lisez le [Préambule - Résumé simple](docs/preambule/resume-simple.md)
-3. **Approche détaillée** : Explorez le [Résumé technique](docs/preambule/resume-technique.md)
+2. **Compréhension générale** : Lisez le [Préambule - Résumé simple](PREAMBULE.md)
+3. **Approche détaillée** : Explorez le [Résumé technique](RESUME.md)
 4. **Étude complète** : Parcourez les chapitres niveau par niveau
 
 ### Pour les contributeurs
@@ -89,7 +89,7 @@ Toutes les contributions sont bienvenues, des chercheurs confirmés aux amateurs
 
 ## Communauté
 
-- **Discord** : [Lien à venir] - Discussions en temps réel, questions rapides
+- **Discord** : https://discord.com/channels/1456242551601238112/1456242552163405859
 - **GitHub Issues** : Pour discussions structurées et suivi des corrections
 - **GitHub Discussions** : Pour échanges ouverts et brainstorming
 
@@ -110,6 +110,7 @@ Selon les niveaux :
 - **Niveau III** : Mécanique quantique, C*-algèbres (pour les démonstrations rigoureuses)
 - **Niveau IV** : Relativité générale, géométrie différentielle
 - **Niveau V** : Physique des particules, cosmologie
+- **Niveau V** : Gravité quantique, trous noirs, matière noire, énergie noire
 
 Le préambule offre trois niveaux de résumé pour s'adapter à différents publics.
 
@@ -117,7 +118,7 @@ Le préambule offre trois niveaux de résumé pour s'adapter à différents publ
 
 ## Auteur
 
-**Dalai-qvant** - Maîtrise de physique (Université Paul Sabatier, Toulouse), DESS télédétection, ancien enseignant en mathématiques et sciences physiques, actuellement développeur informatique, passionné de physique fondamentale et de cosmologie.
+**Dalai-qvant** - Maîtrise de physique (Université Paul Sabatier, Toulouse), DESS de télédétection, ancien enseignant en mathématiques et sciences physiques, actuellement développeur informatique, passionné de physique fondamentale et de cosmologie.
 
 ---
 
